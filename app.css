@@ -9,11 +9,13 @@
 h1 {
     color: #44438c;
     text-align: center;
+    position: 500, 500;
 }
 
 h2 {
     color: #595baf;
     text-align: center;
+    position: 500, 550;
 }
 
 body {
