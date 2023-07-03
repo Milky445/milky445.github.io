@@ -1,9 +1,9 @@
 @font-face { font-family: hanson-bold;
-    src: url(../WEBSITE/Hanson-Bold.ttf);
+    src: url(Hanson-Bold.ttf);
 }
 
 @font-face { font-family: nikkyou;
-    src: url(../WEBSITE/NikkyouSans-mLKax.ttf);
+    src: url(NikkyouSans-mLKax.ttf);
 } 
 
 h1 {
