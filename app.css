@@ -1,0 +1,111 @@
+@font-face { font-family: hanson-bold;
+    src: url(../WEBSITE/Hanson-Bold.ttf);
+}
+
+@font-face { font-family: nikkyou;
+    src: url(../WEBSITE/NikkyouSans-mLKax.ttf);
+} 
+
+h1 {
+    color: #44438c;
+    text-align: center;
+}
+
+h2 {
+    color: #595baf;
+    text-align: center;
+}
+
+body {
+    background-color: #0c0d18;
+    animation: letterspaceswitch 2s;
+}
+
+body {
+    text-align: center;
+}
+
+body {
+    font-family: hanson-bold;
+}
+
+body {
+    line-height: 1mm;
+}
+
+body {
+    position: relative;
+}
+
+.btn {
+    font-family: hanson-bold;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    color: #595baf;
+    background-color: #1c2242;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 20px #2a315a,
+                0 0 60px #2a315a,
+                0 0 150px #2a315a;
+}
+
+.btn {
+    font-family: hanson-bold;
+    border: none;
+    outline: none;
+    position: 500, 500;
+    height: 40px;
+    width: 200px;
+    color: #595baf;
+    background-color: #1c2242;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 20px #2a315a,
+                0 0 60px #2a315a,
+                0 0 150px #2a315a;
+}
+
+.btn {
+    font-family: hanson-bold;
+    border: none;
+    outline: none;
+    position: 1000, 1000;
+    height: 40px;
+    width: 200px;
+    color: #595baf;
+    background-color: #1c2242;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 20px #2a315a,
+                0 0 60px #2a315a,
+                0 0 150px #2a315a;
+}
+
+@keyframes letterspaceswitch {
+    from {letter-spacing: normal;}
+    to {letter-spacing: 2.2px;}
+}
