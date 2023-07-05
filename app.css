@@ -110,11 +110,11 @@ img {
     border: none;
     outline: none;
     border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    width: 500px;
+    height: 500px;
     transition: 0.3s ease;
+    object-position: center;
 
 }
 
