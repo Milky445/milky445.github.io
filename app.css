@@ -1,4 +1,4 @@
-@font-face { font-family: hanson-bold;
+@font-face { font-family: hanson;
     src: url(../milky445.github.io/Hanson-Bold.ttf);
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 body {
-    font-family: hanson-bold;
+    font-family: hanson;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-    font-family: hanson-bold;
+    font-family: hanson;
     border: none;
     outline: none;
     height: 40px;
@@ -61,7 +61,7 @@ body {
 }
 
 .btn {
-    font-family: hanson-bold;
+    font-family: hanson;
     border: none;
     outline: none;
     position: 500, 500;
@@ -84,7 +84,7 @@ body {
 }
 
 .btn {
-    font-family: hanson-bold;
+    font-family: hanson;
     border: none;
     outline: none;
     position: 1000, 1000;
