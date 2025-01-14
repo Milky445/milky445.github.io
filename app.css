@@ -7,12 +7,14 @@ h1 {
     color: #44438c;
     text-align: center;
     position: 500, 500;
+    font-size: 4rem;
 }
 
 h2 {
     color: #595baf;
     text-align: center;
     position: 500, 550;
+    font-size: 2rem;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 }
 
 body {
-    line-height: 5;
+    line-height: 5mm;
 }
 
 body {
@@ -37,68 +39,23 @@ body {
 
 .btn {
     font-family: futura;
-    border: none;
-    outline: none;
-    height: 40px;
-    width: 200px;
+    font-size: 1.3vw;
     color: #595baf;
     background-color: #1c2242;
-    font-size: 15px;
-    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 6vh;
+    width: 18vw;
+    border-radius: 30px;
     transition: 0.3s ease;
-}
-
-.btn:hover {
+    margin: .2vw;
+  }
+  
+  .btn:hover {
     cursor: pointer;
     background: #2a315a;
     box-shadow: 0 0 5px #2a315a,
                 0 0 20px #2a315a,
                 0 0 60px #2a315a,
                 0 0 150px #2a315a;
-}
-
-.btn {
-    font-family: futura;
-    border: none;
-    outline: none;
-    position: 500, 500;
-    height: 40px;
-    width: 200px;
-    color: #595baf;
-    background-color: #1c2242;
-    font-size: 15px;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background: #2a315a;
-    box-shadow: 0 0 5px #2a315a,
-                0 0 20px #2a315a,
-                0 0 60px #2a315a,
-                0 0 150px #2a315a;
-}
-
-.btn {
-    font-family: futura;
-    border: none;
-    outline: none;
-    position: 1000, 1000;
-    height: 40px;
-    width: 200px;
-    color: #595baf;
-    background-color: #1c2242;
-    font-size: 15px;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background: #2a315a;
-    box-shadow: 0 0 5px #2a315a,
-                0 0 20px #2a315a,
-                0 0 60px #2a315a,
-                0 0 150px #2a315a;
-}
+  }
