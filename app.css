@@ -39,13 +39,13 @@ body {
 
 .btn {
     font-family: futura;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: #595baf;
     background-color: #1c2242;
     border: none;
     outline: none;
-    height: 6vh;
-    width: 18vw;
+    height: 5rem;
+    width: 18rem;
     border-radius: 30px;
     transition: 0.3s ease;
     margin: .2vw;
