@@ -2,7 +2,8 @@
 <html>
 
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="app.css"/>
 
     </head>
@@ -10,15 +11,28 @@
     <body>
 
         <h1>santi motoc</h1>
-
         <h2>welcome to my personal portfolio!</h2>
 
-        <button class="btn" href="#aboutme"> more about me</button>
+        <button class="btn" onclick="document.getElementById('#aboutme').scrollIntoView({behavior: 'smooth'});">more about me</button>
 
-        <button class="btn" href="#projects">my projects</button>
+        <button class="btn" onclick="document.getElementById('#myprojects').scrollIntoView({behavior: 'smooth'});">my projects</button>
         
-        <button class="btn" href="#contact">contact me</button>
+        <button class="btn" onclick="document.getElementById('#contactme').scrollIntoView({behavior: 'smooth'});">contact me</button>
 
+        <section id="aboutme">
+            <h2>about me</h2>
+            <p>insert text</p>
+        </section>
+
+        <section id="myprojects">
+            <h2>my projects</h2>
+            <p>insert text</p>
+        </section>
+
+        <section id="contactme">
+            <h2>contact me</h2>
+            <p>insert text</p>
+        </section>
     </body>
 
 </html>

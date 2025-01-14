@@ -3,6 +3,10 @@
     src: url('fonts/futura- medium-bt.ttf') format('truetype');
   }
 
+body {
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: #44438c;
     text-align: center;
@@ -15,6 +19,13 @@ h2 {
     text-align: center;
     position: 500, 550;
     font-size: 2rem;
+}
+
+p {
+    color: #595baf;
+    text-align: center;
+    position: 500, 550;
+    font-size: 1rem;
 }
 
 body {
