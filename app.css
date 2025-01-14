@@ -1,10 +1,7 @@
-@font-face { font-family: hanson;
-    src: url(../milky445.github.io/Hanson-Bold.ttf);
-}
-
-@font-face { font-family: nikkyou;
-    src: url(../milky445.github.io/NikkyouSans.ttf);
-} 
+@font-face { 
+    font-family: futura;
+    src: url('fonts/futura- medium-bt.ttf') format('truetype');
+  }
 
 h1 {
     color: #44438c;
@@ -27,7 +24,7 @@ body {
 }
 
 body {
-    font-family: hanson;
+    font-family: futura;
 }
 
 body {
@@ -39,7 +36,7 @@ body {
 }
 
 .btn {
-    font-family: hanson;
+    font-family: futura;
     border: none;
     outline: none;
     height: 40px;
@@ -61,7 +58,7 @@ body {
 }
 
 .btn {
-    font-family: hanson;
+    font-family: futura;
     border: none;
     outline: none;
     position: 500, 500;
@@ -84,7 +81,7 @@ body {
 }
 
 .btn {
-    font-family: hanson;
+    font-family: futura;
     border: none;
     outline: none;
     position: 1000, 1000;
@@ -104,24 +101,4 @@ body {
                 0 0 20px #2a315a,
                 0 0 60px #2a315a,
                 0 0 150px #2a315a;
-}
-
-img {
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    display: block;
-    transition: 0.3s ease;
-    position: relative;
-    width: 1000px;
-    height: 1500px;
-
-
-}
-
-img:hover {
-    box-shadow: 0 0 5px #d2e5e5,
-                0 0 20px #d2e5e5,
-                0 0 60px #d2e5e5,
-                0 0 150px #d2e5e5;
 }
