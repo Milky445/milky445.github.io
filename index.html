@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="app.js" defer></script>
 
     <head>
         <meta charset="UTF-8">
@@ -13,11 +14,11 @@
         <h1>santi motoc</h1>
         <h2>welcome to my personal portfolio!</h2>
 
-        <button class="btn" onclick="document.getElementById('#aboutme').scrollIntoView({behavior: 'smooth'});">more about me</button>
+        <button class="btn" id="goToAbout">more about me</button>
 
-        <button class="btn" onclick="document.getElementById('#myprojects').scrollIntoView({behavior: 'smooth'});">my projects</button>
+        <button class="btn" id="goToProjects">my projects</button>
         
-        <button class="btn" onclick="document.getElementById('#contactme').scrollIntoView({behavior: 'smooth'});">contact me</button>
+        <button class="btn" id="goToContact">contact me</button>
 
         <section id="aboutme">
             <h2>about me</h2>

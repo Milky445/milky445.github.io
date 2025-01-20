@@ -3,7 +3,7 @@
     src: url('fonts/futura- medium-bt.ttf') format('truetype');
   }
 
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -30,21 +30,9 @@ p {
 
 body {
     background-color: #0c0d18;
-}
-
-body {
     text-align: center;
-}
-
-body {
     font-family: futura;
-}
-
-body {
     line-height: 5mm;
-}
-
-body {
     position: relative;
 }
 
