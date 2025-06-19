@@ -12,6 +12,8 @@ h1 {
     text-align: center;
     position: 500, 500;
     font-size: 4rem;
+    position: relative;
+    z-index: 3;
 }
 
 h2 {
@@ -19,6 +21,8 @@ h2 {
     text-align: center;
     position: 500, 550;
     font-size: 2rem;
+    position: relative;
+    z-index: 3;
 }
 
 p {
@@ -47,14 +51,115 @@ body {
     width: 17rem;
     border-radius: 30px;
     transition: 0.3s ease;
-    margin: .2vw;
-  }
+    margin: 0 0.2vw 0 0.2vw;
+}
   
-  .btn:hover {
+.btn:hover {
     cursor: pointer;
     background: #2a315a;
     box-shadow: 0 0 5px #2a315a,
                 0 0 20px #2a315a,
                 0 0 60px #2a315a,
                 0 0 150px #2a315a;
-  }
+}
+
+section {
+    min-height: 100vh;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-btn {
+    font-size: 1.1rem;
+    width: 12rem;
+    height: 2.8rem;
+    border-radius: 20px;
+    margin: 0.2vw;
+    background-color: #1c2242;
+    color: #595baf;
+    border: none;
+    outline: none;
+    font-family: futura;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+    padding: 0.3rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-btn:hover {
+    cursor: pointer;
+    background: #2a315a;
+    box-shadow: 0 0 2.5px #2a315a,
+                0 0 10px #2a315a,
+                0 0 30px #2a315a,
+                0 0 75px #2a315a;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #181a2a;
+    border-radius: 30px;
+    box-shadow: 0 2px 16px rgba(44, 50, 100, 0.15);
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 500px;
+    color: #595baf;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 32px rgba(44, 50, 100, 0.25);
+}
+
+.scroll-to-top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 4rem;
+}
+
+body, html {
+    background: #0c0d18;
+    /* ...existing styles... */
+}
+
+.three-d-container {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 480px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+#three-d-cube {
+    width: 480px;
+    height: 480px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+section#aboutme {
+    position: relative;
+    padding-top: 0rem;
+    margin-top: 0rem;
+}

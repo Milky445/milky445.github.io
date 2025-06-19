@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <script src="app.js" defer></script>
 
     <head>
         <meta charset="UTF-8">
@@ -16,24 +15,38 @@
 
         <button class="btn" id="goToAbout">more about me</button>
 
-        <button class="btn" id="goToProjects">my projects</button>
+        <button class="btn" id="goToWorks">my works</button>
         
         <button class="btn" id="goToContact">contact me</button>
 
         <section id="aboutme">
+            <div class="three-d-container">
+                <canvas id="three-d-cube" width="480" height="480"></canvas>
+            </div>
             <h2>about me</h2>
             <p>insert text</p>
         </section>
 
-        <section id="myprojects">
-            <h2>my projects</h2>
+        <section id="myworks">
+            <h2>my works</h2>
             <p>insert text</p>
+            <button class="btn small-btn" onclick="window.location.href='projects.html'">see all my works</button>
         </section>
 
         <section id="contactme">
             <h2>contact me</h2>
             <p>insert text</p>
+            <div class="contact-buttons">
+                <button class="btn small-btn" onclick="window.open('https://x.com/santimotoc','_blank')">x</button>
+                <button class="btn small-btn" onclick="window.open('https://linkedin.com/in/santi-motoc222','_blank')">linkedin</button>
+                <button class="btn small-btn" onclick="window.location.href='mailto:santimotoc@icloud.com'">email me</button>
+            </div>
+            <div class="scroll-to-top-container">
+                <button class="btn small-btn" id="scrollToTopBtn">scroll to top</button>
+            </div>
         </section>
+
+        <script src="app.js"></script>
     </body>
 
 </html>
