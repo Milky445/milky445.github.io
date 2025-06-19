@@ -211,3 +211,10 @@ if (goToContactFloating) {
         document.getElementById('contactme').scrollIntoView({ behavior: 'auto' });
     });
 }
+
+const scrollToTopFloating = document.getElementById('scrollToTopFloating');
+if (scrollToTopFloating) {
+    scrollToTopFloating.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    });
+}
