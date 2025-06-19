@@ -1,3 +1,5 @@
+const initials = document.getElementById('floatingInitials');
+
 document.getElementById('goToAbout').addEventListener('click', function() {
     document.getElementById('aboutme').scrollIntoView({ behavior: 'auto' });
 });
@@ -134,4 +136,78 @@ if (canvas) {
     window.addEventListener('resize', onScroll);
     // Initial draw
     drawCube(angleX, angleY);
+}
+
+// Floating header buttons logic (observe header buttons)
+const headerButtonIds = ['goToAbout', 'goToWorks', 'goToContact'];
+const headerButtons = headerButtonIds.map(id => document.getElementById(id));
+const floating = document.getElementById('floatingHeaderButtons');
+
+let headerButtonsVisible = [true, true, true];
+
+function updateFloatingVisibility() {
+    if (!floating) return;
+    // Show only if ALL header buttons are out of view
+    if (headerButtonsVisible.every(v => !v)) {
+        floating.classList.add('visible');
+        if (initials) initials.classList.add('visible');
+    } else {
+        floating.classList.remove('visible');
+        if (initials) initials.classList.remove('visible');
+    }
+}
+
+if (window.IntersectionObserver) {
+    headerButtons.forEach((btn, idx) => {
+        if (!btn) return;
+        const observer = new IntersectionObserver((entries) => {
+            headerButtonsVisible[idx] = entries[0].isIntersecting;
+            updateFloatingVisibility();
+        }, { threshold: 0.01 });
+        observer.observe(btn);
+    });
+    // Initial state
+    updateFloatingVisibility();
+} else {
+    // Fallback: use scroll event (less accurate)
+    function areHeaderButtonsInView() {
+        return headerButtons.some(btn => {
+            if (!btn) return false;
+            const rect = btn.getBoundingClientRect();
+            return rect.bottom > 0 && rect.top < window.innerHeight;
+        });
+    }
+    function fallbackToggle() {
+        if (!floating) return;
+        if (!areHeaderButtonsInView()) {
+            floating.classList.add('visible');
+            if (initials) initials.classList.add('visible');
+        } else {
+            floating.classList.remove('visible');
+            if (initials) initials.classList.remove('visible');
+        }
+    }
+    window.addEventListener('scroll', fallbackToggle);
+    window.addEventListener('resize', fallbackToggle);
+    document.addEventListener('DOMContentLoaded', fallbackToggle);
+}
+
+// Floating buttons functionality
+const goToAboutFloating = document.getElementById('goToAboutFloating');
+if (goToAboutFloating) {
+    goToAboutFloating.addEventListener('click', function() {
+        document.getElementById('aboutme').scrollIntoView({ behavior: 'auto' });
+    });
+}
+const goToWorksFloating = document.getElementById('goToWorksFloating');
+if (goToWorksFloating) {
+    goToWorksFloating.addEventListener('click', function() {
+        document.getElementById('myworks').scrollIntoView({ behavior: 'auto' });
+    });
+}
+const goToContactFloating = document.getElementById('goToContactFloating');
+if (goToContactFloating) {
+    goToContactFloating.addEventListener('click', function() {
+        document.getElementById('contactme').scrollIntoView({ behavior: 'auto' });
+    });
 }
