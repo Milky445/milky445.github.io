@@ -109,6 +109,97 @@ section {
     flex-wrap: wrap;
 }
 
+.contact-outline {
+    width: calc(3 * 12rem + 2rem); /* Width of 3 small buttons + gaps */
+    min-height: fit-content;
+    border: 2px solid #595baf;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.3s ease;
+    padding: 1.5rem;
+}
+
+.works-outline {
+    width: calc(3 * 12rem + 2rem); /* Width of 3 small buttons + gaps */
+    min-height: fit-content;
+    border: 2px solid #595baf;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.3s ease;
+    padding: 1.5rem;
+}
+
+.about-outline {
+    width: calc(3 * 12rem + 2rem); /* Width of 3 small buttons + gaps */
+    min-height: fit-content;
+    border: 2px solid #595baf;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.3s ease;
+    padding: 1.5rem;
+}
+
+.contact-outline:hover {
+    border-color: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 15px #2a315a;
+}
+
+.works-outline:hover {
+    border-color: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 15px #2a315a;
+}
+
+.about-outline:hover {
+    border-color: #2a315a;
+    box-shadow: 0 0 5px #2a315a,
+                0 0 15px #2a315a;
+}
+
+.contact-outline p {
+    color: #595baf;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.works-outline p {
+    color: #595baf;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#myworks .works-outline + .btn {
+    margin-top: 3rem;
+}
+
+.about-outline p {
+    color: #595baf;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
 .project-card {
     background: #181a2a;
     border-radius: 30px;
